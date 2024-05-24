@@ -14,3 +14,5 @@ console.log(list.tail);
 list.prepend(3);
 console.log(list.size);
 console.log(list.head);
+
+console.log(list.at(2));

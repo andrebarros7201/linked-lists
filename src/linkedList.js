@@ -33,6 +33,17 @@ class linkedList {
     this._size++;
   }
 
+  at(index) {
+    let count = 0;
+    if (index > this._size || index < 0) return `Out of Range`;
+    let cursor = this.head;
+    while (index != count) {
+      cursor = cursor.nextNode;
+      count++;
+    }
+    return cursor;
+  }
+
   get size() {
     return this._size;
   }

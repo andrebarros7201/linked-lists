@@ -51,6 +51,17 @@ class linkedList {
     this._size--;
   }
 
+  contains(value) {
+    let counter = 0;
+    let cursor = this.head;
+    while (counter != this._size) {
+      if (cursor.value === value) return true;
+      cursor = cursor.nextNode;
+      counter++;
+    }
+    return false;
+  }
+
   get size() {
     return this._size;
   }

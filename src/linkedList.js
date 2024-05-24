@@ -73,6 +73,19 @@ class linkedList {
     return null;
   }
 
+  toString() {
+    let counter = 0;
+    let cursor = this.head;
+    let string = "";
+    while (counter != this._size) {
+      string += `(${cursor.value}) -> `;
+      cursor = cursor.nextNode;
+      counter++;
+    }
+    string += `null`;
+    return string;
+  }
+
   get size() {
     return this._size;
   }

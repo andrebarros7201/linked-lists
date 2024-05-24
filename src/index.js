@@ -24,3 +24,10 @@ console.log(list.contains(7));
 console.log(list.contains(4));
 
 console.log(list.find(5));
+
+console.log(list.toString());
+
+list.append(10);
+console.log(list.toString());
+list.prepend(0);
+console.log(list.toString());

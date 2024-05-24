@@ -62,6 +62,17 @@ class linkedList {
     return false;
   }
 
+  find(value) {
+    let counter = 0;
+    let cursor = this.head;
+    while (counter != this._size) {
+      if (cursor.value === value) return counter;
+      cursor = cursor.nextNode;
+      counter++;
+    }
+    return null;
+  }
+
   get size() {
     return this._size;
   }

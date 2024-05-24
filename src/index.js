@@ -20,11 +20,7 @@ console.log(list.at(0));
 list.pop();
 console.log(list);
 
-list.pop();
-console.log(list);
-
-list.pop();
-console.log(list);
-
 console.log(list.contains(7));
 console.log(list.contains(4));
+
+console.log(list.find(5));

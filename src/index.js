@@ -15,4 +15,13 @@ list.prepend(3);
 console.log(list.size);
 console.log(list.head);
 
-console.log(list.at(2));
+console.log(list.at(0));
+
+list.pop();
+console.log(list);
+
+list.pop();
+console.log(list);
+
+list.pop();
+console.log(list);

@@ -24,7 +24,7 @@ class linkedList {
 
   prepend(value) {
     const newNode = new Node(value);
-    if (this._size === 0) this.head = newNode;
+    if (this._size === 0) this.append(value);
     else {
       const temp = this.head;
       this.head = newNode;
@@ -42,6 +42,13 @@ class linkedList {
       count++;
     }
     return cursor;
+  }
+
+  pop() {
+    const newLast = this.at(this._size - 2);
+    newLast.nextNode = null;
+    this.tail = newLast;
+    this._size--;
   }
 
   get size() {

@@ -22,6 +22,17 @@ class linkedList {
     this._size++;
   }
 
+  prepend(value) {
+    const newNode = new Node(value);
+    if (this._size === 0) this.head = newNode;
+    else {
+      const temp = this.head;
+      this.head = newNode;
+      newNode.nextNode = temp;
+    }
+    this._size++;
+  }
+
   get size() {
     return this._size;
   }
